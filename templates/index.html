@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+  <title>Some title</title>
+  <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}" />
+</head>
+<body>
+	<form action="http://127.0.0.1:5000/generate" method="GET">
+	<input type="submit" value="Generate">
+  	<hr>
+	</form>
+  <h2>Query Input</h2>
+  <form action="http://127.0.0.1:5000/calculate" method="POST">
+    Input A:<br>
+    <input type="text" name="Input_1" value="">
+    <br>
+    Input B:<br>
+    <input type="text" name="Input_2" value="">
+    <br>
+    Input C:<br>
+    <input type="text" name="Input_3" value="">
+    <br>
+    Input D:<br>
+    <input type="text" name="Input_4" value="">
+    <br>
+    Input E:<br>
+    <input type="text" name="Input_5" value="">
+    <br>
+    Input F:<br>
+    <input type="text" name="Input_6" value="">
+    <br>
+    <br>
+    <input type="submit" value="Calculate">
+  </form>
+</body>
+</html>
